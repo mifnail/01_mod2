@@ -1,11 +1,4 @@
-# import datetime as DT
-# def str_to_date(self_date, other_date):
-#    dt1 = self_date.split(".")
-#    dt2 = other_date.split(".")
-#    self_bdate = DT.date(int(dt1[2]), int(dt1[1]), int(dt1[0]))
-#    other_bdate = DT.date(int(dt2[2]), int(dt2[1]), int(dt2[0]))
-#    return self_bdate, other_bdate
-# vin;gnum;mark;model;age;ls;km;count;price
+
 from datetime import date
 
 
@@ -71,25 +64,11 @@ class Owner:
         self.obl = obl
         self.cars = cars
 
-    # Добавляем сотрудника в отдел
-    # def append(self, emp):
-    #    self.employees.append(emp)
 
-    # Перехват функции print, когда она преобразует свое значение в строку
-    # Возврат информации об отделе
     def __str__(self):
         return f"Владелец: {self.fio}, Номер удостоверения: {self.nud}, Авто: {len(self.cars)} "
 
-    # Вывод сотрудников отдела
-    # def print_employees(self):
-    #    for emp in self.employees:
-    #        print(emp)
 
-    # Вывод сотрудников отдела в отпуске/не в отпуске
-    # def print_employees_on_leave(self, status=True):
-    #    for emp in self.employees:
-    #        if emp.on_leave == status:
-    #            print(emp.number, emp.fio)
     def add_car(self,car):
         self.cars.append(car)
 
