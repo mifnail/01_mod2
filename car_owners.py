@@ -92,6 +92,7 @@ print(vlad)
 print('Накидываем авто')
 vlad.add_car(str('КК111С'))
 vlad.add_car(str('EE222E'))
+vlad.add_car(str('EE555E'))
 
 print(vlad)
 
